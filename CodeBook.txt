@@ -1,0 +1,70 @@
+x_test:   all  measurements  related to test cases
+              created by reading the data from X_test.txt file
+
+
+x_train:  all  measurements  related to  train cases
+               created by reading data from X_train.txt
+
+
+subject_test:  subject measurements  for test cases
+                created by reading data from  subject_test.txt 
+named its column by "subject"
+
+
+subject_train:   subject  measurements  for train cases
+               created by reading data from  subject_train.txt, named its column by "subject"
+
+
+y_test:   activities for test cases, named its column by "ActivityLabel" 
+             created by reading  data from  y_test.txt
+
+
+y_train:  activities for train cases, named its column by "ActivityLabel"  
+              created by reading  data from  y_train.txt
+
+
+testData: merged all the data related to test cases including y_test,subject_test and x_test
+
+
+trainData: merged all the data related to test cases including y_train,subject_train and x_train
+
+
+Data :  merged testData and trainData
+
+
+n : a table of the features including the index and name of feature 
+
+ 
+Names: the second column of table n for extracting the name of feature ( to have them as character type, we have used as.character)
+
+
+IncludeMean: all the feature names or column names including "mean" 
+
+
+IncludeStd: all the feature names or column names including "std"
+
+
+IndexMean: a vector of  indices of features including "mean" 
+
+ 
+IndexStd: a vector of indices of features including "std" 
+
+ 
+Index_Mean_Std: a vector of indices of features including "mean" or "std" 
+
+ 
+Data_Mean_Std: all measurements  on the mean and standard deviation
+
+
+activity_labels: a table including activities and activity labels. Activity labels are from 1 to 6, named its columns by "Labels","Activity"
+
+
+Activity: a vector of activity name
+
+
+DF:  resulted from adding two columns "activity label" and "subject" to Data_Mean_Std
+       ( value stored in column "activity label" is replaced by the name of activity) 
+
+
+FinalData: a data set with the average of each variable for each activity and each subject, it has 180 rows and 81 columns.
+          
